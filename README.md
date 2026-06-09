@@ -22,3 +22,46 @@ A set of custom, professional PHP templates designed for WooCommerce. These temp
 ├── invoice.php         # The master tax invoice template
 ├── packing-slip.php    # The financial-free packing slip template
 └── README.md           # Documentation
+
+
+
+
+🛠️ Installation & Usage
+These templates are designed to be used with standard WooCommerce PDF Invoices & Packing Slips plugins (like the one by WP Overnight).
+
+To safely override the default templates without losing your changes during a plugin update:
+
+Connect to your WordPress site via FTP or your hosting file manager.
+
+Navigate to your active child theme (or main theme):
+wp-content/themes/your-active-theme/
+
+Create the following directory structure if it doesn't already exist:
+woocommerce/pdf/custom-satrendz/
+
+Upload invoice.php and packing-slip.php into this new folder.
+
+Go to your WordPress Admin Dashboard -> WooCommerce -> PDF Invoices.
+
+Under the General tab, look for the "Choose a template" setting and select your new custom-satrendz template.
+
+⚙️ Configuration Notes
+GSTIN & HSN Codes: Ensure your WooCommerce products have custom meta fields for _satrendz_gst_percentage and _satrendz_hsn_code for the matrix to populate correctly.
+
+Intra-state Tax Logic: By default, the script checks if the shipping state is TN or Tamil Nadu to split the tax into CGST/SGST. You can modify this in the invoice.php file on line 197.
+
+Bank Info: Update the hardcoded bank account and UPI details in the invoice.php footer segment to match your business accounts.
+
+👨‍💻 Author
+Sivaraj Shanmugam
+PHP / DevOps & Site Reliability Engineering
+
+📄 License
+This project is open-source and available under the MIT License.
+
+
+***
+
+### A few quick tips before you commit:
+* **The State Check:** Just a reminder that on line 197 of the `invoice.php` file, the state logic is currently set to `TN` and `Tamil Nadu` to trigger the CGST/SGST split. 
+* **Custom Meta Fields:** The invoice looks for `_satrendz_gst_percentage` and `_satrendz_hsn_code`. If you are using a specific GST plug
