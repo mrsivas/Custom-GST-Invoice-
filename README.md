@@ -60,8 +60,11 @@ PHP / DevOps & Site Reliability Engineering
 This project is open-source and available under the MIT License.
 
 
+
 ***
 
 ### A few quick tips before you commit:
 * **The State Check:** Just a reminder that on line 197 of the `invoice.php` file, the state logic is currently set to `TN` and `Tamil Nadu` to trigger the CGST/SGST split. 
-* **Custom Meta Fields:** The invoice looks for `_satrendz_gst_percentage` and `_satrendz_hsn_code`. If you are using a specific GST plug
+* **Custom Meta Fields:** The invoice looks for `_satrendz_gst_percentage` and `_satrendz_hsn_code`. If you are using a specific GST plugin for WooCommerce, you might want to swap those meta keys out in the PHP file to match the keys your plugin uses
+
+
