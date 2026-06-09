@@ -1,0 +1,349 @@
+@page {
+	margin: 0.8cm;
+}
+body {
+	font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+	font-size: 8pt;
+	line-height: 1.3;
+	color: #000000;
+	background-color: #ffffff;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, th {
+	padding: 0;
+	vertical-align: top;
+}
+
+/* Master Outer Grid Border Frame Setup */
+.invoice-master-box {
+	border: 1px solid #444444;
+	width: 100%;
+}
+
+/* Header Matrix Styling */
+.title-bar-table {
+	border-bottom: 1px solid #444444;
+}
+.title-bar-table td {
+	padding: 6px 10px;
+	font-size: 8.5pt;
+	font-weight: bold;
+}
+.left-title {
+	text-align: left;
+	width: 50%;
+}
+.right-title {
+	text-align: right;
+	width: 50%;
+	color: #444444;
+}
+
+/* Vendor Frame Section */
+.vendor-header-table {
+	border-bottom: 1px solid #444444;
+	background-color: #ffffff;
+}
+.logo-cell {
+	width: 15%;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-right: 1px solid #444444;
+}
+.fallback-logo-icon {
+	font-size: 28pt;
+}
+.vendor-details-cell {
+	width: 85%;
+	padding: 10px;
+}
+.vendor-gstin {
+	font-size: 8.5pt;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.vendor-name {
+	font-size: 14pt;
+	font-weight: bold;
+	color: #111111;
+	letter-spacing: 0.5px;
+}
+.vendor-address {
+	font-size: 8pt;
+	color: #333333;
+	margin-top: 2px;
+}
+.vendor-contact {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #444444;
+	margin-top: 4px;
+}
+
+/* Address & Logistics Split Layout Grid */
+.split-metadata-table {
+	border-bottom: 1px solid #444444;
+}
+.address-side-cell {
+	width: 60%;
+	border-right: 1px solid #444444;
+}
+.grid-side-cell {
+	width: 40%;
+}
+
+/* Internal Blue Accent Heading Banners */
+.address-block-header {
+	background-color: #dbecf8;
+	color: #000000;
+	font-weight: bold;
+	padding: 4px 8px;
+	font-size: 8pt;
+	border-bottom: 1px solid #444444;
+	text-transform: uppercase;
+}
+.border-top-divider {
+	border-top: 1px solid #444444;
+}
+.address-block-body {
+	padding: 8px;
+	font-size: 8pt;
+	min-height: 55px;
+}
+
+/* Parameters Logistics Grid Matrix */
+.logistics-inner-grid th, .logistics-inner-grid td {
+	padding: 4px 6px;
+	font-size: 7.5pt;
+	border-bottom: 1px solid #e0e0e0;
+}
+.logistics-inner-grid th {
+	text-align: left;
+	font-weight: bold;
+	color: #333333;
+	width: 45%;
+	border-right: 1px solid #e0e0e0;
+}
+.logistics-inner-grid td {
+	text-align: left;
+	width: 55%;
+	color: #000000;
+}
+.logistics-inner-grid tr:last-child th, .logistics-inner-grid tr:last-child td {
+	border-bottom: none;
+}
+.logistics-inner-grid tr.grid-section-divider th, .logistics-inner-grid tr.grid-section-divider td {
+	border-top: 1px solid #444444;
+}
+
+/* Master Item Grid Design Formatting */
+.order-details-matrix {
+	width: 100%;
+	border-bottom: 1px solid #444444;
+}
+.order-details-matrix th {
+	background-color: #dbecf8;
+	color: #000000;
+	font-weight: bold;
+	font-size: 7.5pt;
+	border-right: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+	padding: 5px 3px;
+	text-align: center;
+	vertical-align: middle;
+}
+.order-details-matrix td {
+	border-right: 1px solid #444444;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 6px 4px;
+	font-size: 8pt;
+	vertical-align: middle;
+}
+
+/* Dimensions mapping */
+.col-sr { width: 4%; }
+.col-desc { width: 36%; text-align: left; }
+.col-hsn { width: 9%; }
+.col-qty { width: 9%; }
+.col-rate { width: 10%; }
+.col-taxable { width: 10%; }
+.col-gst-group { border-bottom: 1px solid #444444; }
+.col-gst-pc { width: 5%; }
+.col-gst-amt { width: 8%; }
+.col-total { width: 9%; border-right: none !important; }
+
+.order-details-matrix td:last-child {
+	border-right: none;
+}
+
+.item-main-name {
+	font-weight: bold;
+	display: block;
+}
+.item-sku-tag {
+	font-size: 7pt;
+	color: #555555;
+}
+
+/* Subtotal Row Execution Styling */
+.matrix-subtotal-row td {
+	background-color: #f9f9f9;
+	border-top: 1px solid #444444;
+	border-bottom: none !important;
+	padding: 6px 4px;
+}
+
+/* Bottom Matrix Layout */
+.footer-layout-table {
+	border-bottom: 1px solid #444444;
+}
+.footer-left-cell {
+	width: 60%;
+	padding: 8px;
+	border-right: 1px solid #444444;
+}
+.footer-right-cell {
+	width: 40%;
+}
+
+/* Bank Box Elements styling */
+.bank-details-box {
+	border: 1px solid #444444;
+	margin-bottom: 10px;
+}
+.bank-box-title {
+	background-color: #dbecf8;
+	font-weight: bold;
+	padding: 3px 6px;
+	font-size: 7.5pt;
+	border-bottom: 1px solid #444444;
+}
+.bank-inner-table th, .bank-inner-table td {
+	padding: 3px 6px;
+	font-size: 7.5pt;
+}
+.bank-inner-table th {
+	text-align: left;
+	font-weight: bold;
+	width: 30%;
+}
+.bank-inner-table td {
+	width: 70%;
+}
+
+.words-total-box {
+	font-size: 7.5pt;
+	margin-top: 8px;
+}
+.currency-words {
+	font-style: italic;
+	color: #444444;
+}
+
+/* Summary Calculations Element Elements Layout */
+.summary-calculation-matrix th, .summary-calculation-matrix td {
+	padding: 4px 8px;
+	font-size: 7.5pt;
+	border-bottom: 1px solid #e0e0e0;
+}
+.summary-calculation-matrix th {
+	text-align: left;
+	font-weight: bold;
+	border-right: 1px solid #444444;
+}
+.summary-calculation-matrix thead th {
+	background-color: #dbecf8;
+	color: #000000;
+	text-align: center;
+	border-bottom: 1px solid #444444;
+}
+.summary-calculation-matrix thead th:last-child {
+	border-right: none;
+}
+.summary-calculation-matrix td {
+	text-align: right;
+}
+.summary-calculation-matrix tr:last-child th, .summary-calculation-matrix tr:last-child td {
+	border-bottom: none;
+}
+
+/* Grand Total Contrast Highlight element block line */
+.grand-total-row-highlight th, .grand-total-row-highlight td {
+	background-color: #dbecf8 !important;
+	font-size: 9pt !important;
+	font-weight: bold !important;
+	border-top: 1px solid #444444 !important;
+	color: #000000 !important;
+	padding: 6px 8px !important;
+}
+
+/* Signatures & Declaration Block Alignment */
+.regulatory-footer-table {
+	border-bottom: 1px solid #444444;
+}
+.declaration-cell {
+	width: 55%;
+	padding: 8px;
+	font-size: 7pt;
+	line-height: 1.4;
+	color: #333333;
+}
+.eoe-tag {
+	display: block;
+	margin-top: 4px;
+	font-weight: bold;
+}
+.qr-cell {
+	width: 15%;
+	padding: 8px;
+	text-align: center;
+	vertical-align: middle;
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+.placeholder-qr {
+	font-size: 16pt;
+	border: 1px dashed #999;
+	padding: 4px;
+	display: inline-block;
+}
+.signatory-cell {
+	width: 30%;
+	padding: 8px;
+	text-align: center;
+	position: relative;
+}
+.company-auth-title {
+	font-weight: bold;
+	font-size: 7.5pt;
+}
+.auth-signature-line-gap {
+	height: 35px;
+}
+.auth-label {
+	font-size: 7.5pt;
+	font-weight: bold;
+	border-top: 1px dashed #444444;
+	padding-top: 2px;
+	display: block;
+}
+
+/* Bottom Anchor Message Banner */
+.thank-you-banner {
+	text-align: center;
+	font-weight: bold;
+	font-size: 8.5pt;
+	padding: 5px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+/* Utility alignments */
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+.bold-text { font-weight: bold !important; }
