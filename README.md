@@ -23,7 +23,7 @@ A set of custom, professional PHP templates designed for WooCommerce. These temp
 ├── packing-slip.php    # The financial-free packing slip template
 └── README.md           # Documentation
 
-
+```
 
 
 🛠️ Installation & Usage
